@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>College Campus Smart Parking</h1>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="parking-lot" style="display:none;">
+            <h2>Parking Lot Status</h2>
+            <div class="parking-area">
+                <h3>Bikes</h3>
+                <div class="parking-spot" id="bike1">Bike Spot 1</div>
+                <div class="parking-spot" id="bike2">Bike Spot 2</div>
+                <!-- Add more bike spots as needed -->
+            </div>
+            <div class="parking-area">
+                <h3>Cars</h3>
+                <div class="parking-spot" id="car1">Car Spot 1</div>
+                <div class="parking-spot" id="car2">Car Spot 2</div>
+                <!-- Add more car spots as needed -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
